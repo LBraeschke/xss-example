@@ -5,7 +5,7 @@ i18n.use(initReactI18next).init({
   resources: {
     en: {
       translation: {
-        searchResultSummary: 'Your search is: "{{search}}" ',
+        searchResultSummary: 'Your search is: <strong>"{{search}}"</strong>',
         searchPlaceholder: 'Search for skills, names, departments...',
         searchButton: 'Search',
       },

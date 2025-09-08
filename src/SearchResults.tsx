@@ -85,11 +85,10 @@ const SearchResults: React.FC = () => {
           marginBottom: "2rem",
           color: "#333",
         }}
-      >
-        {t("searchResultSummary", {
-          search: <strong>{initialSearch}</strong>,
-        })}
-      </h2>
+        dangerouslySetInnerHTML={{
+          __html: t("searchResultSummary", { search: initialSearch }),
+        }}
+      ></h2>
     </div>
   );
 };
